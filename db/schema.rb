@@ -10,19 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108072840) do
+
+ActiveRecord::Schema.define(version: 20161108073104) do
 
   create_table "ang_moh_songs", force: :cascade do |t|
     t.string  "title"
     t.float   "duration"
+  end
+
+  create_table "chinese_songs", force: :cascade do |t|
+    t.string  "title"
+    t.string  "duration"
+
     t.integer "year_release"
     t.string  "album_title"
     t.string  "artist_last_name"
   end
 
   create_table "managers", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+    t.string   "cell_phone_number"
   end
 
 end
