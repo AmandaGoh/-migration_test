@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20161108073104) do
     t.string  "album_title"
     t.string  "artist_last_name"
   end
-=======
+
 ActiveRecord::Schema.define(version: 20161108072237) do
->>>>>>> 6a4302d67353ffc80b13fe5fc79d524a94e37f25
+
 
   create_table "managers", force: :cascade do |t|
     t.datetime "created_at",        null: false
